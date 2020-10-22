@@ -1,0 +1,21 @@
+<table class="table table-stripped">
+    <tr>
+        <th>Titulo</th>
+        <th>Banda</th>
+        <th>Year</th>
+        <th>Genero</th>
+    </tr>
+    <tbody>
+        <tr *ngFor="let i of this.discos;">
+            <td>{{ i.titulo }} </td>
+            <td>{{ i.grupo }} </td>
+            <td>{{ i.year }} </td>
+            <td>{{ i.genero }} </td>
+            <td>
+                <button class="btn btn-secondary bcontrol" (click)="this.editarDisco(i.id)">Editar</button>
+                <button class="btn btn-danger bcontrol" (click)="this.borrarDisco(i._id)">Borrar</button>
+            </td>
+        </tr>
+        <tr colspan="5" *ngIf="this.discos.length == 0">No hay discos aun</tr>
+    </tbody>
+</table>

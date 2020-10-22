@@ -1,0 +1,22 @@
+<div class="col-8">
+        <div class="form-group">
+            <label for="titulo">Titulo</label>
+            <input type="text" class="form-control" [(ngModel)]="disco.titulo" name="titulo" id="titulo" placeholder="Titulo">
+        </div>
+        <div class="form-group">
+            <label for="autor">Autor</label>
+            <input type="autor" class="form-control" id="autor" [(ngModel)]="disco.grupo" placeholder="Autor, Grupo o Interprete...">
+        </div>
+        <div class="form-group">
+            <label for="year">Year</label>
+            <input type="text" class="form-control" id="year" [(ngModel)]="disco.year" placeholder="Year">
+        </div>
+        <div class="form-group">
+            <label for="genero">Genero</label>
+            <input type="text" class="form-control" id="genero" [(ngModel)]="disco.genero" placeholder="Genero">
+        </div>
+
+        <button class="btn btn-primary bcontrol" (click)="aceptar()"  >Aceptar</button>
+        <button class="btn btn-secondary bcontrol" (click)="cancelar()"  >Cancelar</button>
+
+</div>
