@@ -48,8 +48,6 @@ export class ListadoDiscosComponent implements OnInit {
 
     editarDisco(id: string): void {
 
-        console.log(id);
-
         this.router.navigate(['detalle', id]);
 
 

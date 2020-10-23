@@ -20,9 +20,7 @@ export class DetalleDiscosComponent implements OnInit {
             this.edit = true;
             this.servicio.obtenerDisco(this.ruta.snapshot.params.id).subscribe((res: any) => {
 
-                console.log(res);
-
-                this.disco = res[0];
+                this.disco = res;
             });
         }
         else {
